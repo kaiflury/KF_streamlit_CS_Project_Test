@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title('🎈 App Name')
+st.title("🚗 Used-Car Price Estimator")
 
-st.write('Hello world!')
+st.info("This is an App built for a project in our Computer Science class. We use Machine Learning and Multiple Regression Analysis of used car price data in order to estimate the price of any used car.")
