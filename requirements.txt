@@ -1,1 +1,4 @@
-streamlit>=1.26.0
+streamlit #Basis for APP Building
+numpy #numerical processing
+pandas #importing Data
+scikit-learn #Machine Learning Module
