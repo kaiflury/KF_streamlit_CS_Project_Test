@@ -1,13 +1,10 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# 🚗 Used-Car Price Predictor App
 
-Description of the app ...
+This is a Used-Car Price Predictor App using Machine Learning to estimate retial prices for your car.
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://KF_streamlit_CS_Project_Test.streamlit.app/)
 
 ## GitHub Codespaces
 
