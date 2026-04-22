@@ -18,7 +18,7 @@ st.write("**X**")
   X = df_sorted.drop("price", axis=1)
   X
 
-  st.write("**Y**")
+st.write("**Y**")
   Y = df_sorted.price
   Y
 
