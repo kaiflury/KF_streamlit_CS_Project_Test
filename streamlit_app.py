@@ -21,5 +21,5 @@ with st.expander("Data"):
   Y
 
 with st.expander("Data Visualization"):
-  st.scatter_chart(data=df, x="milage", y="price")
+  st.scatter_chart(data=df, x="milage", y="price", color="brand")
 
