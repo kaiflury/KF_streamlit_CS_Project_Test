@@ -14,7 +14,7 @@ with st.expander("Data"):
 
 df_sorted = df.sort_values(by="price", ascending=False)
 
- st.write("**X**")
+st.write("**X**")
   X = df_sorted.drop("price", axis=1)
   X
 
