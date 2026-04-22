@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 
 st.title("🚗 Used-Car Price Estimator")
 
@@ -17,3 +18,6 @@ with st.expander("Data"):
   st.write("**Y**")
   Y = df.price
   Y
+
+with st.expander("Data Visualization"):
+  st.altair_chart(data=df, x="milage", y="price")
