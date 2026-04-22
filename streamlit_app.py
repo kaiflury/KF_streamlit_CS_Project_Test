@@ -9,19 +9,17 @@ st.info("This is an App built for a project in our Computer Science class. We us
 
 with st.expander("Data"):
   st.subheader("**Raw Data**")
-  df = pd.read_csv("https://raw.githubusercontent.com/kaiflury/KF_streamlit_CS_Project_Test/refs/heads/master/car_data.csv")
+  df = pd.read_csv("https://raw.githubusercontent.com/kaiflury/KF_streamlit_CS_Project_Test/refs/heads/master/cleaned_car_data.csv")
   df
 
-  df_sorted = df.sort_values(by="price", ascending=False)
-
   st.write("**X**")
-  X = df_sorted.drop("price", axis=1)
+  X = df.drop("price", axis=1)
   X
 
   st.write("**Y**")
-  Y = df_sorted.price
+  Y = df.price
   Y
 
 with st.expander("Data Visualization"):
-  st.scatter_chart(data=df_sorted, x="milage", y="price", color="brand")
+  st.scatter_chart(data=df, x="milage", y="price", color="brand")
 
