@@ -12,13 +12,13 @@ with st.expander("Data"):
   df = pd.read_csv("https://raw.githubusercontent.com/kaiflury/KF_streamlit_CS_Project_Test/refs/heads/master/car_data.csv")
   df
 
-df_sorted = df.sort_values(by="price", ascending=False)
+  df_sorted = df.sort_values(by="price", ascending=False)
 
-st.write("**X**")
+  st.write("**X**")
   X = df_sorted.drop("price", axis=1)
   X
 
-st.write("**Y**")
+  st.write("**Y**")
   Y = df_sorted.price
   Y
 
