@@ -12,14 +12,16 @@ with st.expander("Data"):
   df = pd.read_csv("https://raw.githubusercontent.com/kaiflury/KF_streamlit_CS_Project_Test/refs/heads/master/car_data.csv")
   df
 
+df_sorted = df.sort_values(by="price", ascending=False)
+
   st.write("**X**")
-  X = df.drop("price", axis=1)
+  X = df_sorted.drop("price", axis=1)
   X
 
   st.write("**Y**")
-  Y = df.price
+  Y = df_sorted.price
   Y
 
 with st.expander("Data Visualization"):
-  st.scatter_chart(data=df, x="milage", y="price", color="brand")
+  st.scatter_chart(data=df_sorted, x="milage", y="price", color="brand")
 
