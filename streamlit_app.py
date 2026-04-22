@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np 
-from numpy import default_rng as rng
+
 
 st.title("🚗 Used-Car Price Estimator")
 
@@ -21,7 +21,5 @@ with st.expander("Data"):
   Y
 
 with st.expander("Data Visualization"):
-  # st.altair_chart(data=df, x="milage", y="price")
-  df = pd.DataFrame(rng(0).standard_normal((20, 3)), columns=["milage", "price"])
-  st.line_chart(df)
+  st.scatter_chart(data=df, x="milage", y="price")
 
